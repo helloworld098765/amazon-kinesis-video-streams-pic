@@ -1,5 +1,7 @@
 #include "Include_i.h"
 
+// 动态库相关实现
+
 #if defined _WIN32 || defined _WIN64 || defined __CYGWIN__
 
 //

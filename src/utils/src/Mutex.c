@@ -1,5 +1,7 @@
 #include "Include_i.h"
 
+// 互斥锁、条件变量实现
+
 #if defined _WIN32 || defined _WIN64 || defined __CYGWIN__
 
 //

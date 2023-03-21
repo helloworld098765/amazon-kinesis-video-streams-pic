@@ -2,6 +2,8 @@
 
 CHAR ALPHA_NUM[] = "0123456789abcdefghijklmnopqrstuvwxyz";
 
+// 数字 -> 字符串 | 字符串 -> 数字
+
 /**
  * Converts an uint64 to string. This implementation is due to the fact that not all platforms support itoa type of functionality
  */

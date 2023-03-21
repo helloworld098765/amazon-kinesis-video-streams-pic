@@ -1,5 +1,7 @@
 #include "Include_i.h"
 
+// 日志实现
+
 static volatile SIZE_T gLoggerLogLevel = LOG_LEVEL_WARN;
 
 PCHAR getLogLevelStr(UINT32 loglevel)

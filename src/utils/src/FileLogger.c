@@ -1,3 +1,4 @@
+// 日志，文件驱动实现
 /**
  * Kinesis Video Producer File based logger
  */

@@ -120,6 +120,7 @@ CleanUp:
 
 #else
 
+// 获取指定线程Name
 PUBLIC_API STATUS defaultGetThreadName(TID thread, PCHAR name, UINT32 len)
 {
     UINT32 retValue;
@@ -145,11 +146,14 @@ PUBLIC_API STATUS defaultGetThreadName(TID thread, PCHAR name, UINT32 len)
     return (0 == retValue) ? STATUS_SUCCESS : STATUS_INVALID_OPERATION;
 }
 
+
+// 获取线程tid
 PUBLIC_API TID defaultGetThreadId()
 {
     return (TID) pthread_self();
 }
 
+// 创建线程
 PUBLIC_API STATUS defaultCreateThread(PTID pThreadId, startRoutine start, PVOID args)
 {
     STATUS retStatus = STATUS_SUCCESS;
@@ -198,6 +202,7 @@ CleanUp:
     return retStatus;
 }
 
+// pthraed_join
 PUBLIC_API STATUS defaultJoinThread(TID threadId, PVOID* retVal)
 {
     STATUS retStatus = STATUS_SUCCESS;
@@ -222,6 +227,7 @@ CleanUp:
     return retStatus;
 }
 
+// 睡眠指定时间
 PUBLIC_API VOID defaultThreadSleep(UINT64 time)
 {
     // Time in microseconds
@@ -272,6 +278,7 @@ CleanUp:
 
 #else
 
+// 取消线程
 PUBLIC_API STATUS defaultCancelThread(TID threadId)
 {
     STATUS retStatus = STATUS_SUCCESS;
@@ -294,6 +301,7 @@ CleanUp:
 
 #endif
 
+// 分离指定线程
 PUBLIC_API STATUS defaultDetachThread(TID threadId)
 {
     STATUS retStatus = STATUS_SUCCESS;
@@ -318,6 +326,7 @@ CleanUp:
 
 #endif
 
+// 睡眠，直到某一时刻
 PUBLIC_API VOID defaultThreadSleepUntil(UINT64 time)
 {
     UINT64 curTime = GETTIME();

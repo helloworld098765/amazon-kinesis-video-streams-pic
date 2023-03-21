@@ -1,5 +1,7 @@
 #include "Include_i.h"
 
+// 时间戳字符串
+
 getTime globalGetTime = defaultGetTime;
 getTime globalGetRealTime = defaultGetTime;
 

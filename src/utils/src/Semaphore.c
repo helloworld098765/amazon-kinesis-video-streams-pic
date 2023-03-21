@@ -1,5 +1,7 @@
 #include "Include_i.h"
 
+// 信号量实现
+
 /**
  * Create a semaphore object
  */

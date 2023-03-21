@@ -1,5 +1,7 @@
 #include "Include_i.h"
 
+// hex编解码实现
+
 /**
  * Hex encoding upper-case alphabet
  */

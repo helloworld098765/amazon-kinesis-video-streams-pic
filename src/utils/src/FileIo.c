@@ -1,5 +1,7 @@
 #include "Include_i.h"
 
+// 文件IO 实现
+
 /**
  * Read a file from the given full/relative filePath into the memory area pointed to by pBuffer.
  * Specifying NULL in pBuffer will return the size of the file.

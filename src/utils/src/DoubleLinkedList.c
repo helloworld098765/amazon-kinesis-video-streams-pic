@@ -1,5 +1,7 @@
 #include "Include_i.h"
 
+// 双向链表实现
+
 /**
  * Create a new double linked list
  */

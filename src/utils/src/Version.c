@@ -1,5 +1,8 @@
 #include "Include_i.h"
 
+
+// 获取环境信息 
+
 //
 // Version functions
 //

@@ -1,3 +1,4 @@
+// 原子操作
 #ifndef __UTILS_ATOMICS__
 #define __UTILS_ATOMICS__
 
